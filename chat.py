@@ -41,7 +41,8 @@ def check_all_messages(message):
     response(long_responses.R_EATING, ["what", "you", "eat"], required_words=["you", "eat"])
     response(long_responses.R_Futbol, ["t'agrada", "el", "futbol"], required_words=["t'agrada", "futbol"])
     response(long_responses.R_Hora, ["hora"], required_words=["hora"])
-
+    response(long_responses.R_fine_thanks, ["fine", "thanks"], required_words=["fine", "thanks"])
+    response(long_responses.R_Bye, ["good bye"], required_words=["Good Bye"])
     best_match = max(highest_prob_list, key=highest_prob_list.get)
     # print(highest_prob_list)
 
